@@ -1,0 +1,9 @@
+{
+  "name": "universal-skills",
+  "private": true,
+  "description": "Multi-platform Agent Skills distribution",
+  "scripts": {
+    "docs:build": "node scripts/build-docs.js"
+  },
+  "type": "module"
+}
