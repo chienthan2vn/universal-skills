@@ -1,0 +1,9 @@
+{
+  "name": "claude-agent-skills",
+  "private": true,
+  "description": "Claude Code Agent Skills — install into .claude/skills/",
+  "files": ["skills", "install.js"],
+  "scripts": {
+    "postinstall": "node install.js"
+  }
+}

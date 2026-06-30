@@ -1,0 +1,9 @@
+{
+  "name": "codex-agent-skills",
+  "private": true,
+  "description": "OpenAI Codex Agent Skills — install into .codex/skills/",
+  "files": ["skills", "install.js"],
+  "scripts": {
+    "postinstall": "node install.js"
+  }
+}
