@@ -36,7 +36,7 @@ After install, the platform's agent will discover skills from the target directo
 npm run docs:build
 ```
 
-That's it — the root repo only has a docs build script. There's no version management, no npm publish config. Version tracking happens via `git log` on each platform subdirectory.
+That's it — the root repo only has a docs build script. Version is managed via the `version` field in each platform's `package.json`. When updating skills, bump versions and publish to npm with `npm publish` in the respective subdirectory.
 
 ## Skill Structure
 

@@ -1,9 +1,17 @@
 {
   "name": "claude-agent-skills",
-  "private": true,
+  "version": "1.0.0",
+  "private": false,
   "description": "Claude Code Agent Skills — install into .claude/skills/",
   "files": ["skills", "install.js"],
   "scripts": {
     "postinstall": "node install.js"
-  }
+  },
+  "license": "MIT",
+  "author": "chienthan2vn",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chienthan2vn/universal-skills.git"
+  },
+  "keywords": ["claude", "claude-code", "skills", "agent-skills"]
 }

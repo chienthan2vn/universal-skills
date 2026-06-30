@@ -119,7 +119,7 @@ node scripts/version-sync.js --bump=patch
 
 Catalog skills trực tuyến: **https://chienthan2vn.github.io/universal-skills/**
 
-Hiển thị tất cả skills từ 3 nền tảng, filter theo platform, kèm install commands. Cập nhật bằng `npm run docs:build` và push `docs/` lên GitHub.
+Hiển thị tất cả skills từ 3 nền tảng, filter theo platform, kèm install commands. Cập nhật bằng `npm run docs:build` và push lên GitHub.
 
 ## 📜 Giấy phép
 
