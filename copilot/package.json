@@ -1,17 +1,5 @@
 {
   "name": "copilot-agent-skills",
-  "version": "1.0.0",
-  "private": false,
-  "description": "GitHub Copilot Agent Skills — install into .agents/skills/",
-  "files": ["skills", "install.js"],
-  "scripts": {
-    "postinstall": "node install.js"
-  },
-  "license": "MIT",
-  "author": "chienthan2vn",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/chienthan2vn/universal-skills.git"
-  },
-  "keywords": ["github", "copilot", "skills", "agent-skills"]
+  "private": true,
+  "description": "GitHub Copilot Agent Skills"
 }

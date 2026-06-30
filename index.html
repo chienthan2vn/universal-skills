@@ -43,22 +43,30 @@
 <div class="container">
   <header>
     <h1><span>Universal</span> Skills</h1>
-    <p class="subtitle">Agentic coding skills for Claude Code, OpenAI Codex, and GitHub Copilot — one catalog, three platforms.</p>
+    <p class="subtitle">Agentic coding skills for Claude Code, OpenAI Codex, and GitHub Copilot</p>
   </header>
 
   <div class="version-bar">
     <span><span class="dot" style="background:#6F4E37"></span> Claude Code</span>
     <span><span class="dot" style="background:#412991"></span> Codex</span>
     <span><span class="dot" style="background:#1F6FEB"></span> Copilot</span>
-    <span style="color:var(--muted);font-size:0.8rem">commit 6c29653</span>
+    <span style="color:var(--muted);font-size:0.8rem">commit 921db58</span>
   </div>
 
   <div class="install-hero">
     <h2>⚡ Quick Install</h2>
-    <p style="font-size:.875rem;margin-bottom:.75rem;color:var(--muted)">Choose your platform and run in your project root:</p>
-    <code class="cmd" onclick="navigator.clipboard.writeText(this.textContent)">npm install claude-agent-skills</code>
-    <code class="cmd" onclick="navigator.clipboard.writeText(this.textContent)">npm install codex-agent-skills</code>
-    <code class="cmd" onclick="navigator.clipboard.writeText(this.textContent)">npm install copilot-agent-skills</code>
+    <p style="font-size:.875rem;margin-bottom:.75rem;color:var(--muted)">Clone repo, rồi copy skills của platform vào đúng thư mục:</p>
+    <div style="margin-bottom:1rem">
+      <div style="font-size:.8rem;color:var(--muted);margin-bottom:.25rem;font-weight:600">Bước 1: Clone</div>
+      <code class="cmd" onclick="navigator.clipboard.writeText(this.textContent)">git clone https://github.com/chienthan2vn/universal-skills.git /tmp/skills --depth 1</code>
+    </div>
+    <div>
+      <div style="font-size:.8rem;color:var(--muted);margin-bottom:.25rem;font-weight:600">Bước 2: Copy skills của nền tảng bạn dùng</div>
+      <code class="cmd" onclick="navigator.clipboard.writeText(this.textContent)">cp -rf /tmp/skills/claude/skills/* .claude/skills/    # Claude Code (Linux/macOS)</code>
+      <code class="cmd" onclick="navigator.clipboard.writeText(this.textContent)">cp -rf /tmp/skills/codex/skills/* .codex/skills/      # OpenAI Codex (Linux/macOS)</code>
+      <code class="cmd" onclick="navigator.clipboard.writeText(this.textContent)">cp -rf /tmp/skills/copilot/skills/* .agents/skills/   # GitHub Copilot (Linux/macOS)</code>
+      <code class="cmd" onclick="navigator.clipboard.writeText(this.textContent)">xcopy /tmp/skillsclaudeskills .claudeskills       # Windows</code>
+    </div>
   </div>
 
   <div class="filters">
@@ -75,8 +83,8 @@
       <h3>algorithmic-art</h3>
       <p>No description available.</p>
       <div class="install-block">
-        <span class="install-label">Target:</span>
-        <code>.claude/skills/algorithmic-art/</code>
+        <span class="install-label">Source:</span>
+        <code>claude/skills/algorithmic-art</code>
       </div>
     </div>
 
@@ -85,8 +93,8 @@
       <h3>brand-guidelines</h3>
       <p>No description available.</p>
       <div class="install-block">
-        <span class="install-label">Target:</span>
-        <code>.claude/skills/brand-guidelines/</code>
+        <span class="install-label">Source:</span>
+        <code>claude/skills/brand-guidelines</code>
       </div>
     </div>
 
@@ -95,8 +103,8 @@
       <h3>canvas-design</h3>
       <p>No description available.</p>
       <div class="install-block">
-        <span class="install-label">Target:</span>
-        <code>.claude/skills/canvas-design/</code>
+        <span class="install-label">Source:</span>
+        <code>claude/skills/canvas-design</code>
       </div>
     </div>
 
@@ -105,8 +113,8 @@
       <h3>claude-api</h3>
       <p>No description available.</p>
       <div class="install-block">
-        <span class="install-label">Target:</span>
-        <code>.claude/skills/claude-api/</code>
+        <span class="install-label">Source:</span>
+        <code>claude/skills/claude-api</code>
       </div>
     </div>
 
@@ -115,8 +123,8 @@
       <h3>doc-coauthoring</h3>
       <p>No description available.</p>
       <div class="install-block">
-        <span class="install-label">Target:</span>
-        <code>.claude/skills/doc-coauthoring/</code>
+        <span class="install-label">Source:</span>
+        <code>claude/skills/doc-coauthoring</code>
       </div>
     </div>
 
@@ -125,8 +133,8 @@
       <h3>docx</h3>
       <p>No description available.</p>
       <div class="install-block">
-        <span class="install-label">Target:</span>
-        <code>.claude/skills/docx/</code>
+        <span class="install-label">Source:</span>
+        <code>claude/skills/docx</code>
       </div>
     </div>
 
@@ -135,8 +143,8 @@
       <h3>frontend-design</h3>
       <p>No description available.</p>
       <div class="install-block">
-        <span class="install-label">Target:</span>
-        <code>.claude/skills/frontend-design/</code>
+        <span class="install-label">Source:</span>
+        <code>claude/skills/frontend-design</code>
       </div>
     </div>
 
@@ -145,8 +153,8 @@
       <h3>internal-comms</h3>
       <p>No description available.</p>
       <div class="install-block">
-        <span class="install-label">Target:</span>
-        <code>.claude/skills/internal-comms/</code>
+        <span class="install-label">Source:</span>
+        <code>claude/skills/internal-comms</code>
       </div>
     </div>
 
@@ -155,8 +163,8 @@
       <h3>mcp-builder</h3>
       <p>No description available.</p>
       <div class="install-block">
-        <span class="install-label">Target:</span>
-        <code>.claude/skills/mcp-builder/</code>
+        <span class="install-label">Source:</span>
+        <code>claude/skills/mcp-builder</code>
       </div>
     </div>
 
@@ -165,8 +173,8 @@
       <h3>pdf</h3>
       <p>No description available.</p>
       <div class="install-block">
-        <span class="install-label">Target:</span>
-        <code>.claude/skills/pdf/</code>
+        <span class="install-label">Source:</span>
+        <code>claude/skills/pdf</code>
       </div>
     </div>
 
@@ -175,8 +183,8 @@
       <h3>pptx</h3>
       <p>No description available.</p>
       <div class="install-block">
-        <span class="install-label">Target:</span>
-        <code>.claude/skills/pptx/</code>
+        <span class="install-label">Source:</span>
+        <code>claude/skills/pptx</code>
       </div>
     </div>
 
@@ -185,8 +193,8 @@
       <h3>skill-creator</h3>
       <p>No description available.</p>
       <div class="install-block">
-        <span class="install-label">Target:</span>
-        <code>.claude/skills/skill-creator/</code>
+        <span class="install-label">Source:</span>
+        <code>claude/skills/skill-creator</code>
       </div>
     </div>
 
@@ -195,8 +203,8 @@
       <h3>slack-gif-creator</h3>
       <p>No description available.</p>
       <div class="install-block">
-        <span class="install-label">Target:</span>
-        <code>.claude/skills/slack-gif-creator/</code>
+        <span class="install-label">Source:</span>
+        <code>claude/skills/slack-gif-creator</code>
       </div>
     </div>
 
@@ -205,8 +213,8 @@
       <h3>theme-factory</h3>
       <p>No description available.</p>
       <div class="install-block">
-        <span class="install-label">Target:</span>
-        <code>.claude/skills/theme-factory/</code>
+        <span class="install-label">Source:</span>
+        <code>claude/skills/theme-factory</code>
       </div>
     </div>
 
@@ -215,8 +223,8 @@
       <h3>web-artifacts-builder</h3>
       <p>No description available.</p>
       <div class="install-block">
-        <span class="install-label">Target:</span>
-        <code>.claude/skills/web-artifacts-builder/</code>
+        <span class="install-label">Source:</span>
+        <code>claude/skills/web-artifacts-builder</code>
       </div>
     </div>
 
@@ -225,8 +233,8 @@
       <h3>webapp-testing</h3>
       <p>No description available.</p>
       <div class="install-block">
-        <span class="install-label">Target:</span>
-        <code>.claude/skills/webapp-testing/</code>
+        <span class="install-label">Source:</span>
+        <code>claude/skills/webapp-testing</code>
       </div>
     </div>
 
@@ -235,8 +243,8 @@
       <h3>xlsx</h3>
       <p>No description available.</p>
       <div class="install-block">
-        <span class="install-label">Target:</span>
-        <code>.claude/skills/xlsx/</code>
+        <span class="install-label">Source:</span>
+        <code>claude/skills/xlsx</code>
       </div>
     </div>
 
@@ -245,8 +253,8 @@
       <h3>aspnet-core</h3>
       <p>No description available.</p>
       <div class="install-block">
-        <span class="install-label">Target:</span>
-        <code>.codex/skills/aspnet-core/</code>
+        <span class="install-label">Source:</span>
+        <code>codex/skills/aspnet-core</code>
       </div>
     </div>
 
@@ -255,8 +263,8 @@
       <h3>chatgpt-apps</h3>
       <p>No description available.</p>
       <div class="install-block">
-        <span class="install-label">Target:</span>
-        <code>.codex/skills/chatgpt-apps/</code>
+        <span class="install-label">Source:</span>
+        <code>codex/skills/chatgpt-apps</code>
       </div>
     </div>
 
@@ -265,8 +273,8 @@
       <h3>cli-creator</h3>
       <p>No description available.</p>
       <div class="install-block">
-        <span class="install-label">Target:</span>
-        <code>.codex/skills/cli-creator/</code>
+        <span class="install-label">Source:</span>
+        <code>codex/skills/cli-creator</code>
       </div>
     </div>
 
@@ -275,8 +283,8 @@
       <h3>cloudflare-deploy</h3>
       <p>No description available.</p>
       <div class="install-block">
-        <span class="install-label">Target:</span>
-        <code>.codex/skills/cloudflare-deploy/</code>
+        <span class="install-label">Source:</span>
+        <code>codex/skills/cloudflare-deploy</code>
       </div>
     </div>
 
@@ -285,8 +293,8 @@
       <h3>define-goal</h3>
       <p>No description available.</p>
       <div class="install-block">
-        <span class="install-label">Target:</span>
-        <code>.codex/skills/define-goal/</code>
+        <span class="install-label">Source:</span>
+        <code>codex/skills/define-goal</code>
       </div>
     </div>
 
@@ -295,8 +303,8 @@
       <h3>figma</h3>
       <p>No description available.</p>
       <div class="install-block">
-        <span class="install-label">Target:</span>
-        <code>.codex/skills/figma/</code>
+        <span class="install-label">Source:</span>
+        <code>codex/skills/figma</code>
       </div>
     </div>
 
@@ -305,8 +313,8 @@
       <h3>acquire-codebase-knowledge</h3>
       <p>Use this skill when the user explicitly asks to map, document, or onboard into an existing codebase. Trigger for prompts like "map this code…</p>
       <div class="install-block">
-        <span class="install-label">Target:</span>
-        <code>.agents/skills/acquire-codebase-knowledge/</code>
+        <span class="install-label">Source:</span>
+        <code>copilot/skills/acquire-codebase-knowledge</code>
       </div>
     </div>
 
@@ -315,8 +323,8 @@
       <h3>acreadiness-assess</h3>
       <p>Run the AgentRC readiness assessment on the current repository and produce a static HTML dashboard at reports/index.html. Wraps `npx github:…</p>
       <div class="install-block">
-        <span class="install-label">Target:</span>
-        <code>.agents/skills/acreadiness-assess/</code>
+        <span class="install-label">Source:</span>
+        <code>copilot/skills/acreadiness-assess</code>
       </div>
     </div>
 
@@ -325,8 +333,8 @@
       <h3>acreadiness-generate-instructions</h3>
       <p>Generate tailored AI agent instruction files via AgentRC instructions command. Produces .github/copilot-instructions.md (default, recommende…</p>
       <div class="install-block">
-        <span class="install-label">Target:</span>
-        <code>.agents/skills/acreadiness-generate-instructions/</code>
+        <span class="install-label">Source:</span>
+        <code>copilot/skills/acreadiness-generate-instructions</code>
       </div>
     </div>
 
@@ -335,8 +343,8 @@
       <h3>acreadiness-policy</h3>
       <p>Help the user pick, write, or apply an AgentRC policy. Policies customise readiness scoring by disabling irrelevant checks, overriding impac…</p>
       <div class="install-block">
-        <span class="install-label">Target:</span>
-        <code>.agents/skills/acreadiness-policy/</code>
+        <span class="install-label">Source:</span>
+        <code>copilot/skills/acreadiness-policy</code>
       </div>
     </div>
 
@@ -345,14 +353,14 @@
       <h3>add-educational-comments</h3>
       <p>Add educational comments to the file specified, or prompt asking for file to comment if one is not provided.</p>
       <div class="install-block">
-        <span class="install-label">Target:</span>
-        <code>.agents/skills/add-educational-comments/</code>
+        <span class="install-label">Source:</span>
+        <code>copilot/skills/add-educational-comments</code>
       </div>
     </div>
   </div>
 
   <footer>
-    Skills follow the <a href="https://agentskills.io" style="color:var(--accent)">Agent Skills Spec</a>.
+    Skills follow the <a href="https://agentskills.io" style="color:var(--accent)">Agent Skills Spec</a>. Kiến trúc chi tiết: <a href="Universal_Skills_Architecture.md" style="color:var(--accent)">Universal_Skills_Architecture.md</a>.
     2026 — Universal Skills
   </footer>
 </div>

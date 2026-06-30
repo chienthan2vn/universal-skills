@@ -1,17 +1,5 @@
 {
   "name": "codex-agent-skills",
-  "version": "1.0.0",
-  "private": false,
-  "description": "OpenAI Codex Agent Skills — install into .codex/skills/",
-  "files": ["skills", "install.js"],
-  "scripts": {
-    "postinstall": "node install.js"
-  },
-  "license": "MIT",
-  "author": "chienthan2vn",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/chienthan2vn/universal-skills.git"
-  },
-  "keywords": ["openai", "codex", "skills", "agent-skills"]
+  "private": true,
+  "description": "OpenAI Codex Agent Skills"
 }

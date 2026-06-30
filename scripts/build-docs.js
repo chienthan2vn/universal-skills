@@ -69,7 +69,7 @@ function scanSkills() {
         platformKey: platform.dir,
         target: platform.target,
         color: platform.color,
-        install: `npm install ${platform.dir}-agent-skills`,
+        install: `${platform.dir}/skills/${fm.name || entry}`,
       });
     }
   }
@@ -90,8 +90,8 @@ function buildHTML(skills) {
       <h3>${s.name}</h3>
       <p>${s.description.substring(0, 140)}${s.description.length > 140 ? '…' : ''}</p>
       <div class="install-block">
-        <span class="install-label">Target:</span>
-        <code>${s.target}/${s.name}/</code>
+        <span class="install-label">Source:</span>
+        <code>${s.install}</code>
       </div>
     </div>`).join('\n');
 
@@ -144,7 +144,7 @@ function buildHTML(skills) {
 <div class="container">
   <header>
     <h1><span>Universal</span> Skills</h1>
-    <p class="subtitle">Agentic coding skills for Claude Code, OpenAI Codex, and GitHub Copilot — one catalog, three platforms.</p>
+    <p class="subtitle">Agentic coding skills for Claude Code, OpenAI Codex, and GitHub Copilot</p>
   </header>
 
   <div class="version-bar">
@@ -156,10 +156,18 @@ function buildHTML(skills) {
 
   <div class="install-hero">
     <h2>⚡ Quick Install</h2>
-    <p style="font-size:.875rem;margin-bottom:.75rem;color:var(--muted)">Choose your platform and run in your project root:</p>
-    <code class="cmd" onclick="navigator.clipboard.writeText(this.textContent)">npm install claude-agent-skills</code>
-    <code class="cmd" onclick="navigator.clipboard.writeText(this.textContent)">npm install codex-agent-skills</code>
-    <code class="cmd" onclick="navigator.clipboard.writeText(this.textContent)">npm install copilot-agent-skills</code>
+    <p style="font-size:.875rem;margin-bottom:.75rem;color:var(--muted)">Clone repo, rồi copy skills của platform vào đúng thư mục:</p>
+    <div style="margin-bottom:1rem">
+      <div style="font-size:.8rem;color:var(--muted);margin-bottom:.25rem;font-weight:600">Bước 1: Clone</div>
+      <code class="cmd" onclick="navigator.clipboard.writeText(this.textContent)">git clone https://github.com/chienthan2vn/universal-skills.git /tmp/skills --depth 1</code>
+    </div>
+    <div>
+      <div style="font-size:.8rem;color:var(--muted);margin-bottom:.25rem;font-weight:600">Bước 2: Copy skills của nền tảng bạn dùng</div>
+      <code class="cmd" onclick="navigator.clipboard.writeText(this.textContent)">cp -rf /tmp/skills/claude/skills/* .claude/skills/    # Claude Code (Linux/macOS)</code>
+      <code class="cmd" onclick="navigator.clipboard.writeText(this.textContent)">cp -rf /tmp/skills/codex/skills/* .codex/skills/      # OpenAI Codex (Linux/macOS)</code>
+      <code class="cmd" onclick="navigator.clipboard.writeText(this.textContent)">cp -rf /tmp/skills/copilot/skills/* .agents/skills/   # GitHub Copilot (Linux/macOS)</code>
+      <code class="cmd" onclick="navigator.clipboard.writeText(this.textContent)">xcopy /tmp/skills\claude\skills .claude\skills\       # Windows</code>
+    </div>
   </div>
 
   <div class="filters">
@@ -174,7 +182,7 @@ function buildHTML(skills) {
   </div>
 
   <footer>
-    Skills follow the <a href="https://agentskills.io" style="color:var(--accent)">Agent Skills Spec</a>.
+    Skills follow the <a href="https://agentskills.io" style="color:var(--accent)">Agent Skills Spec</a>. Kiến trúc chi tiết: <a href="Universal_Skills_Architecture.md" style="color:var(--accent)">Universal_Skills_Architecture.md</a>.
     ${new Date().getFullYear()} — Universal Skills
   </footer>
 </div>

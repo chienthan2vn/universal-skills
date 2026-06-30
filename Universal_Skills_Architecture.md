@@ -74,3 +74,43 @@ Bao gồm các trường chuẩn chung và bổ sung thêm:
 - `arguments` / `argument-hint`: Định nghĩa tham số truyền vào từ lệnh (VD: `$0`, `$1`).
 - `paths`: Giới hạn skill chỉ kích hoạt khi user đang làm việc với các file cụ thể (VD: `*.ts, *.tsx`).
 - `shell`: Xác định shell để chạy Dynamic Injection (mặc định `bash`, có thể đổi thành `powershell`).
+
+## 3. Người dùng bổ sung — qua GitHub
+
+Người dùng đóng góp skill mới hoặc cập nhật skill hiện có thông qua quy trình GitHub chuẩn:
+
+### Fork & Pull Request
+
+1. **Fork** repository về tài khoản GitHub cá nhân
+2. **Clone** fork về máy:
+   ```bash
+   git clone https://github.com/<username>/universal-skills.git
+   ```
+3. **Tạo nhánh** cho thay đổi:
+   ```bash
+   git checkout -b feat/add-<skill-name>
+   ```
+4. **Thêm skill** vào đúng thư mục nền tảng (`claude/skills/`, `codex/skills/`, hoặc `copilot/skills/`)
+5. **Commit** và push lên fork:
+   ```bash
+   git add claude/skills/<skill-name>/
+   git commit -m "feat: add <skill-name> skill for Claude Code"
+   git push origin feat/add-<skill-name>
+   ```
+6. **Mở Pull Request** từ fork về repository gốc
+
+### Yêu cầu khi đóng góp
+- Mỗi skill phải có file `SKILL.md` với frontmatter đầy đủ (`name`, `description`)
+- Mô tả phải rõ ràng về chức năng và điều kiện kích hoạt
+- Nếu skill đi kèm script, phải có hướng dẫn sử dụng
+
+### Cập nhật skill
+- Sửa đổi nội dung trong thư mục skill
+- Commit với message mô tả thay đổi
+- Mở PR nếu cần đồng bộ lên repository chính
+
+## 4. Phiên bản — qua Git commit
+
+### Cách thức hoạt động
+
+- Mỗi commit là một mốc phiên bản (version) cho toàn bộ repository
