@@ -58,9 +58,8 @@ universal-skills/
 │       ├── acquire-codebase-knowledge/
 │       ├── acreadiness-assess/
 │       └── ...
-├── docs/                # GitHub Pages site
-│   ├── index.html       # Catalog skills (tự động sinh)
-│   └── .nojekyll
+├── index.html            # GitHub Pages site (tự động sinh)
+├── .nojekyll
 ├── scripts/
 │   ├── build-docs.js    # Script build catalog HTML
 │   └── version-sync.js  # Đồng bộ version giữa các package

@@ -3,8 +3,7 @@
 // build-docs.js — Build GitHub Pages site from skill metadata
 //
 // Scans all skill SKILL.md files, extracts frontmatter,
-// and generates docs/index.html — a browsable catalog for users to
-// find and copy skills. Output to docs/ for GitHub Pages.
+// and generates index.html at repo root for GitHub Pages.
 //
 // Usage:
 //   node scripts/build-docs.js
@@ -16,7 +15,7 @@ import { fileURLToPath } from 'node:url';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, '..');
-const DOCS_DIR = join(ROOT, 'docs');
+const DOCS_DIR = ROOT;
 
 const PLATFORMS = [
   { dir: 'claude',  label: 'Claude Code', target: '.claude/skills', color: '#6F4E37' },
